@@ -2,245 +2,274 @@
   <html>
 
   <head>
+    <title>
+      Google
+    </title>
     <style>
       body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-size: 15px;
-  width: 100%;
-}
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-size: 15px;
+        width: 100%;
+      }
 
-.main {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  justify-content: center;
-  display: flex;
-  flex: 1 auto auto auto 1;
-  flex-direction: column;
-  align-content: space-between;
-  overflow: hidden;
-}
-.nav {
-  overflow: auto;
-  height: auto;
-  padding: 5px;
-  display: flex;
-  align-content: center;
-  width: 100%;
-}
-.nav a {
-  align-content: center;
-  display: inline-block;
-  padding-left: 15px;
-  font-family: Arial, sans-serif;
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  opacity: 0.75;
-  padding-top: 10px;
-  vertical-align: middle;
-}
-#app {
-  display: grid;
-  grid: 33fr 33fr 33fr / 33fr 33fr 33fr;
-  height: 20px;
-  width: 20px;
-  justify-content: center;
-  align-content: center;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 1px;
-  margin-top: 4px;
-}
-.nav a:hover {
-  text-decoration: underline;
-}
-.small {
-  background-color: #4f4f4f;
-  margin: 1px;
-  height: 6px;
-  width: 6px;
-}
-.nav button {
-  background-color: Dodgerblue;
-  border: 1px solid Dodgerblue;
-  height: 35px;
-  width: 80px;
-  color: white;
-  font-weight: bold;
-  margin-top: 2px;
-  margin-right: 15px;
-  outline: none;
-}
+      .main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        flex: 1 auto auto auto 1;
+        flex-direction: column;
+        align-content: space-between;
+      }
 
-#left-nav {
-  align-content: center;
-  float: left;
-}
-#right-nav {
-  align-content: center;
-  float: right;
-  position: relative;
-  justify-content: flex-end;
-  font-size: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  flex: 1 1 auto;
-}
-#center {
-  margin-top: 125px;
-  min-height: 100%;
-  width: 100%;
-}
+      .nav {
+        overflow: auto;
+        height: auto;
+        padding: 5px;
+        display: flex;
+        align-content: center;
+        width: 100%;
+      }
 
-form {
- 
-  height: 50px;
-  overflow: hidden;
-  width: 100%;
+      .nav a {
+        align-content: center;
+        display: inline-block;
+        padding-left: 15px;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        opacity: 0.75;
+        padding-top: 10px;
+        vertical-align: middle;
+      }
 
-  display: flex;
-}
-#buttons {
-  width: 300px;
-  margin-top: 25px;
-font-family: arial, sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: nowrap;
-  display: flex;
+      #app {
+        display: grid;
+        grid: 33fr 33fr 33fr / 33fr 33fr 33fr;
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        align-content: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 1px;
+        margin-top: 4px;
+      }
 
-}
-button {
-  background-color: hsl(0,0%,97%);
-  border: none;
-  height: 40px;
-  width: 140px;
-padding: 0px;
-  margin: 5px;
-  font-size: 15px;
-}
+      .nav a:hover {
+        text-decoration: underline;
+      }
+
+      .small {
+        background-color: #4f4f4f;
+        margin: 1px;
+        height: 6px;
+        width: 6px;
+      }
+
+      .nav button {
+        background-color: Dodgerblue;
+        border: 1px solid Dodgerblue;
+        height: 35px;
+        width: 80px;
+        color: white;
+        font-weight: bold;
+        margin-top: 2px;
+        margin-right: 15px;
+        outline: none;
+      }
+
+      #left-nav {
+        align-content: center;
+        float: left;
+      }
+
+      #right-nav {
+        align-content: center;
+        float: right;
+        position: relative;
+        justify-content: flex-end;
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        flex: 1 1 auto;
+      }
+
+      #center {
+        margin-top: 125px;
+        min-height: 100%;
+        width: 100%;
+      }
+
+      form {
+
+        height: 50px;
+        overflow: hidden;
+        width: 100%;
+
+        display: flex;
+      }
+
+      #buttons {
+        width: 300px;
+        margin-top: 25px;
+        font-family: arial, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: nowrap;
+        display: flex;
+
+      }
+
+      button {
+        background-color: hsl(0, 0%, 97%);
+        border: none;
+        height: 40px;
+        width: 140px;
+        padding: 0px;
+        margin: 5px;
+        font-size: 15px;
+      }
+
       button:hover {
         border: 1px solid gainsboro;
       }
-svg {
-  height: 25px;
-  width: auto;
-}
-.main-input {
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-   border-radius: 24px;
-    border: 1px solid gainsboro;
-  justify-content: center;
-  width: 500px;
-  height: 50px;
-  overflow: hidden;
-}
-      .main-input:hover {
-         border: 3px solid gainsboro;
-      }
-input {
-  width: 430px;
-  border: none;
-  height: 33px;
-  margin-right: auto;
-  margin-left: auto;
-  
-}
-#mic
-{
-  margin-bottom: auto;
-  margin-top: auto;
-  float: right;
-}
-      #glass svg {
-          height: 22px;
-      }
-#glass {
 
-margin-top: auto;
-  margin-bottom: auto;
-  opacity: 0.35;
-  padding-left: 7px;
-}
-#main-logo {
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-  display: flex;
-}
-img {
-  margin-right: auto;
-  margin-left: auto;
-}
-#footer-man {
-  align-self: flex-end;
-  border-top: 1px solid gainsboro;
-background-color: hsl(0, 0%, 97%);
-  display: flex;
-  flex: auto 1 1;
-  width: 100%;
-  height: 40px;
-  justify-content: space-between;
-  bottom: 0;
-  position: fixed;
-  padding-bottom: 7px;
-}
-#legal {
-  float: right;
-  position: relative;
-  justify-content: flex-end;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-#about {
-  float: left;
-  position: relative;
-  order: -1;
-    margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 30px;
-  margin-left: 15px;
-}
-#footer-man a {
-  align-content: center;
-  display: inline-block;
-  padding-left: 15px;
-  font-family: Arial, sans-serif;
-  text-decoration: none;
-  color: hsl(0,0%,45%);
-  font-size: 15px;
-  padding-top: 10px;
-  vertical-align: middle;
-  bottom: 0;
-}
+      svg {
+        height: 25px;
+        width: auto;
+      }
+
+      .main-input {
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        border-radius: 24px;
+        border: 1px solid gainsboro;
+        justify-content: center;
+        width: 500px;
+        height: 50px;
+        overflow: hidden;
+      }
+
+      .main-input:hover {
+        border: 3px solid gainsboro;
+      }
+
+      input {
+        width: 430px;
+        border: none;
+        height: 33px;
+        margin-right: auto;
+        margin-left: auto;
+
+      }
+
+      #mic {
+        margin-bottom: auto;
+        margin-top: auto;
+        float: right;
+      }
+
+      #glass svg {
+        height: 22px;
+      }
+
+      #glass {
+
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: 0.35;
+        padding-left: 7px;
+      }
+
+      #main-logo {
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+      }
+
+      img {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      #footer-man {
+        align-self: flex-end;
+        border-top: 1px solid gainsboro;
+        background-color: hsl(0, 0%, 97%);
+        display: flex;
+        flex: auto 1 1;
+        width: 100%;
+        height: 40px;
+        justify-content: space-between;
+        bottom: 0;
+        position: fixed;
+        padding-bottom: 7px;
+      }
+
+      #legal {
+        float: right;
+        position: relative;
+        justify-content: flex-end;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+
+      #about {
+        float: left;
+        position: relative;
+        order: -1;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 30px;
+        margin-left: 15px;
+      }
+
+      #footer-man a {
+        align-content: center;
+        display: inline-block;
+        padding-left: 15px;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        color: hsl(0, 0%, 45%);
+        font-size: 15px;
+        padding-top: 10px;
+        vertical-align: middle;
+        bottom: 0;
+      }
+
       #footer-man a:hover {
         text-decoration: underline;
       }
+
       .footer img {
-  height: 15px;
-  width: auto;
-}
-      
-#env {
-  margin-left: -120px;
-  display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
-}
+        height: 15px;
+        width: auto;
+      }
+
+      #env {
+        margin-left: -120px;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
       #img {
         position: absolute;
         padding-top: 9px;
         margin-right: 0;
       }
+
       #env a {
         padding-left: 18px;
       }
@@ -288,9 +317,9 @@ background-color: hsl(0, 0%, 97%);
                 <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path>
                 <path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
               </svg>
-            </div>        
-          
-         </form>
+            </div>
+
+          </form>
         </div>
 
         <div class="search" id="buttons">
@@ -299,8 +328,10 @@ background-color: hsl(0, 0%, 97%);
         </div>
       </div>
       <div class="footer" id="footer-man">
-        <div class="footer" id="env"><div class="footer" id="img">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="r8PpOd" alt="Leaf image" data-iml="1612472384298" data-atf="1"></div>
+        <div class="footer" id="env">
+          <div class="footer" id="img">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="r8PpOd" alt="Leaf image" data-iml="1612472384298" data-atf="1">
+          </div>
           <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a>
         </div>
 
