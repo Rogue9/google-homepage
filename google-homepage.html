@@ -21,7 +21,7 @@
         position: relative;
         justify-content: center;
         display: flex;
-        flex: 1 auto auto auto 1;
+        flex: 40px auto auto auto 1;
         flex-direction: column;
         align-content: space-between;
       }
@@ -31,13 +31,14 @@
         height: 40px;
         padding: 5px;
         display: flex;
-        align-content: center;
+        align-content: space-between;
+        position: fixed;
         width: 100%;
+        top: 0;
       }
 
       .nav a {
         align-content: center;
-        display: inline-block;
         padding-left: 15px;
         font-family: Arial, sans-serif;
         text-decoration: none;
@@ -55,10 +56,11 @@
         width: 20px;
         justify-content: center;
         align-content: center;
-        padding-right: 15px;
         padding-left: 15px;
         margin: 1px;
         margin-top: 4px;
+        padding-right: 105px;
+        padding-top: 15px;
       }
 
       .nav a:hover {
@@ -83,7 +85,7 @@
         margin-right: 15px;
         outline: none;
         top: 0;
-        position: fixed;
+
       }
 
       #left-nav {
@@ -92,14 +94,19 @@
       }
 
       #right-nav {
-        align-content: center;
         float: right;
-        position: relative;
         justify-content: flex-end;
         font-size: 14px;
         padding-left: 30px;
         padding-right: 30px;
+        display: flex;
         flex: 1 1 auto;
+        position: relative;
+        right: 0;
+      }
+      .right2 {
+        padding-right: 40px;
+        padding-left: -15px;
       }
 
       #center {
@@ -276,6 +283,8 @@
       #env a {
         padding-left: 18px;
       }
+
+
     </style>
   </head>
 
@@ -287,8 +296,8 @@
           <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
         </div>
         <div class="nav" id="right-nav">
-          <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
-          <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+            <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="right1">Gmail</a>
+            <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl" class="right2">Images</a>
           <div class="nav" id="app">
             <div class="small" id="1"></div>
             <div class="small" id="2"></div>
